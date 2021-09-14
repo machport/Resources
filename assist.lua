@@ -8,6 +8,7 @@ mr = hookfunction(math.random,function(...)
     return mr(...)
 end)
 syn.request = function(data)
+    print(data.url)
     if data.Url:find("loadScript") then
         return {Body="9e73eacc85ea18c0042365ad5e9148430643dedebc34d3e34c3dfd75fd2a6abc33b7b591c64a3f8c2fa096aa7200c617956cb7a4bc57f15672d50f16d305bc61"}
     end
