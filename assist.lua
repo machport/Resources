@@ -1,11 +1,11 @@
 getgenv().UserKey = 'yourkeygoeshere'; -- dont touch this
 setreadonly(syn,false)
 synr=syn.request
-mr = hookfunction(math.random,function(min,max)
+mr = hookfunction(math.random,function(...)
     if checkcaller() then
         return 1
     end
-    return mr(min,max)
+    return mr(...)
 end)
 syn.request = function(data)
     if data.Url:find("loadScript") then
