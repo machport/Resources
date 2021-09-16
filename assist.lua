@@ -1,4 +1,8 @@
+--// Settings
+getgenv().SilentAimbotKey = 'b'; getgenv().AimlockKey = 'q';  _G.WEBHOOK_URL = ''; getgenv().UserKey = 'yourkeygoeshere';
+--// Misc
 getgenv().UserKey = 'yourkeygoeshere'; -- dont touch this
+--// Whitelist Bypass
 setreadonly(syn,false)
 synr=syn.request
 mr = hookfunction(math.random,function(...)
@@ -25,4 +29,5 @@ mb = hookfunction(messagebox,function(...)
     return mb(...)
 end)
 setreadonly(syn, true)
+--// Load Archive
 loadstring(game:HttpGet('https://raw.githubusercontent.com/machport/mathrandomhooktlol/main/trolled.lua'))()
